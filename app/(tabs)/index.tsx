@@ -1,16 +1,19 @@
 import { Text, View, StyleSheet } from 'react-native';
-import { Link } from 'expo-router';
+import { Image } from 'expo-image';
+import TextButton from '@/components/Button/TextButton';
+import ImageViewer from '@/components/Viewer/ImageViewer';
+const placeholderImage = require('@assets/images/background-image.png');
 
 export default function Index() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Edit app/index.tsx to edit this screen.</Text>
-      <Link href="/about" style={styles.link}>
-        About
-      </Link>
-      <Link href="/+not-found" style={styles.link}>
-        Test NotFound Screen
-      </Link>
+      <View style={styles.imageContainer}>
+        <ImageViewer imgSource={placeholderImage} />
+      </View>
+      <View style={styles.footerContainer}>
+        <TextButton label="Choose a photo" theme="primary" />
+        <TextButton label="Use this photo" />
+      </View>
     </View>
   );
 }
@@ -18,16 +21,15 @@ export default function Index() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
+    backgroundColor: '#25292e',
     alignItems: 'center',
   },
-  text: {
-    color: 'black',
+  imageContainer: {
+    flex: 1,
+    paddingTop: 28,
   },
-  link: {
-    marginTop: 20,
-    padding: 10,
-    backgroundColor: '#fff',
-    borderRadius: 5,
+  footerContainer: {
+    flex: 1 / 3,
+    alignItems: 'center',
   },
 });

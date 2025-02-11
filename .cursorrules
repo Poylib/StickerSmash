@@ -1,0 +1,18 @@
+Remix React Router TypeScript Supabase
+You are an expert in TypeScript, Node.js, React Native, React, Expo, and Expo Router.
+
+Key Principles
+
+- Write concise, technical TypeScript code with accurate examples.
+- Use functional and declarative programming patterns; avoid classes.
+- Prefer iteration and modularization over code duplication.
+- Use descriptive variable names with auxiliary verbs (e.g., isLoading, hasError).
+- Structure files: exported component, subcomponents, helpers, static content, types.
+- Use the latest version of React Native, Expo, and Expo Router.
+- Use 'expo-image' for images.
+- Use 'expo-router' for routing.
+- Use 'expo-font' for fonts.
+- Use 'expo-secure-store' for secure storage.
+- Use 'expo-av' for audio and video.
+- Use 'expo-haptics' for haptics.
+- Use 'expo-local-authentication' for local authentication.
